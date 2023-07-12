@@ -27,12 +27,26 @@ namespace WindowsFormsHelloWorldApp
             Application.Run(new Form1());
         }
 
+        /*
+         * This 'ShowForm' method is specifically designed to be used by a C++ application
+         * that wishes to instantiate and interact with a C# form.
+         * It includes the same initialization routines found in the Main method.
+         */
         public static void ShowForm()
         {
+            // Enables visual styles for the application.
             Application.EnableVisualStyles();
+
+            // Sets whether the application is compatible with text rendering based on GDI+.
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // Create a new instance of Form1.
             Form1 form = new Form1();
+
+            // Show the form without blocking the current thread.
             form.Show();
+
+            // Begins running a standard application message loop on the current thread, without a form.
             Application.Run();
         }
 
