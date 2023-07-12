@@ -16,6 +16,6 @@ The solution `ExecuteAWindowsFormsAppFromMemoryWithNativeCPP` contains two proje
 3) In the file explorer that opens, right-click on the `PowershellDotNetToStringConverter.ps1` file and click on 'Edit'. Run the PowerShell file using F5. This transforms the `WindowsFormsHelloWorldApp.exe` application into `WindowsFormsHelloWorldApp.txt`.
 4) Run `CPPExecuteDotNetFromMemory.exe` in the directory `OutputDirectory`. This application loads `WindowsFormsHelloWorldApp.txt`, transforms it back into a .NET assembly, and executes it.
 
-#Future Development
+# Future Development
 -Addition of the string as embedded data.
 -Assessment of the possibility to hide the C++ console window, keeping only the .NET application window visible.
